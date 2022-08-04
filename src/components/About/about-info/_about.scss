@@ -31,6 +31,9 @@
 }
 @media (max-width: 450px) {
   .about {
-    margin-top: 5rem;
+    margin-top: 11rem;
+    .bio {
+      width: 100%;
+    }
   }
 }
