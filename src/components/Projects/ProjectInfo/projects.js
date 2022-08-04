@@ -4,7 +4,7 @@ export const projects = [
     title: 'Rider Finder WebApp',
     description:
       "Cycling Social Media App For Learning C#, Api's, .NET, Angular.",
-    moreinfo: true,
+    moreinfo: false,
     badge: 'Web',
     githublink:
       'https://github.com/MathewBravo/RiderFinderApp',
