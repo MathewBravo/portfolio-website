@@ -1,0 +1,33 @@
+.title-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 1rem;
+  height: 30rem;
+  font-family: $font-primary;
+  width: fit-content;
+  &__name {
+    margin-bottom: 0;
+    font-size: 5rem;
+  }
+  &__subtitle {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    &-main {
+      height: 10rem;
+      &__name {
+        font-size: 3rem;
+      }
+      &__subtitle {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

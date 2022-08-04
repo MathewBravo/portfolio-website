@@ -1,0 +1,34 @@
+.project {
+  &-page {
+    margin: auto;
+    width: 85%;
+  }
+  &-card {
+    display: flex;
+    flex-flow: column;
+    height: 15rem;
+    font-family: $font-primary;
+    &__moreinfo {
+      display: flex;
+      margin-top: auto !important;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    &__githublink {
+      display: flex;
+      margin-top: auto !important;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    &__badge {
+      display: flex;
+      justify-content: right;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.mantine-Paper-root.mantine-Card-root.mantine-ergsfy {
+  background-color: $primary-beige;
+}

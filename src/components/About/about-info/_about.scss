@@ -1,0 +1,36 @@
+.about {
+  font-family: $font-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+  &-title {
+    text-transform: uppercase;
+  }
+
+  &-bio {
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+  }
+  &-table {
+    &__title {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-style: dotted;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__interests {
+      display: flex;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .about {
+    margin-top: 5rem;
+  }
+}

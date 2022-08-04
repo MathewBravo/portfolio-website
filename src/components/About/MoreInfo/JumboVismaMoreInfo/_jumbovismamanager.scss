@@ -1,0 +1,23 @@
+* {
+  font-family: $font-primary;
+}
+
+.title {
+  display: flex;
+
+  margin-top: 5rem;
+  font-size: 3rem;
+  justify-content: center;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-style: dotted;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-top: 3rem;
+  width: 85%;
+}

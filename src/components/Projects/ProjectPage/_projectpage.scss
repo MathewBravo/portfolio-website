@@ -1,0 +1,12 @@
+.project {
+  font-family: $font-primary;
+  &-choices {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    &__title {
+      margin-right: 1rem;
+    }
+  }
+}

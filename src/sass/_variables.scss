@@ -1,0 +1,20 @@
+$primary-navy: #1c3879;
+$primary-blue: #607eaa;
+$primary-beige: #eae3d2;
+$primary-winter: #f9f5eb;
+
+// NavBar
+$navbar-primary: #b3b3b9;
+$key-color: #e1dddd;
+$text-color: darken($key-color, 33%);
+$highlight-color: #1c3879;
+$key-vertical-face: rgba($key-color, 0.55);
+$key-shadow: -25px -15px 30px -15px rgba(white, 0.5),
+  5px 5px 6px rgba(black, 0.2);
+$key-shadow-up: -30px -20px 30px -15px rgba(white, 0.5),
+  7px 7px 7px rgba(black, 0.2);
+$key-shadow-down: -25px -10px 20px -15px rgba(white, 0),
+  3px 3px 4px rgba(white, 0.2);
+
+//Font
+$font-primary: 'Courier New', Courier, monospace;

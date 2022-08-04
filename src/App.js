@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import AboutPage from './components/About/about-info/About';
+
+import HomePage from './components/Home/HomePage/HomePage';
+import Navbar from './components/Home/navbar/Navbar';
+import ProjectPage from './components/Projects/ProjectPage/ProjectPage';
+import ContactPage from './components/Contact/ContactPage/ContactPage';
+import JumboVismaManager from './components/About/MoreInfo/JumboVismaMoreInfo/JumboVismaManager';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='about' element={<AboutPage />} />
+        <Route path='projects' element={<ProjectPage />} />
+        <Route path='contact' element={<ContactPage />} />
+        <Route
+          path='tjv-rider-manager'
+          element={<JumboVismaManager />}
+        />
+      </Routes>
+    </>
   );
 }
 

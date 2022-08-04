@@ -1,0 +1,169 @@
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    margin-left: 1rem;
+  }
+  &__navigators {
+    width: 50%;
+    justify-content: end;
+
+    margin-right: 1rem;
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+  }
+
+
+  button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: $text-color;
+    transition: all 0.65s;
+    &:focus {
+      outline: none;
+    }
+    &:focus:not(:active) {
+      z-index: 2;
+      outline: none;
+      box-shadow: -40px -10px 40px -10px
+          rgba($highlight-color, 0.2),
+        40px -10px 40px -10px rgba($highlight-color, 0.2),
+        0px 20px 40px -10px rgba($highlight-color, 0.2);
+      .button_hole {
+        border-top-color: rgba($highlight-color, 0.8);
+        border-bottom-color: darken($highlight-color, 30%);
+        background-color: darken($highlight-color, 20%);
+        &::after {
+          background-color: rgba($highlight-color, 0.8);
+          border-bottom-color: darken(
+            $highlight-color,
+            15%
+          );
+        }
+      }
+      .button_key > * {
+        color: darken($highlight-color, 10%);
+      }
+    }
+    * {
+      transition: all 0.65s;
+    }
+    position: relative;
+    margin: 0.3rem;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    &:hover {
+      * {
+        transition: all 0.35s;
+      }
+      .button_hole {
+        box-shadow: $key-shadow-up;
+      }
+      .button_key {
+        transform: (translateY(-7px));
+      }
+      .button_key > * {
+        color: darken($highlight-color, 10%);
+        text-shadow: 0px 0px 10px
+          rgba($highlight-color, 0.33);
+      }
+    }
+    &:active {
+      * {
+        transition: all 0.125s;
+      }
+      .button_hole {
+        box-shadow: $key-shadow-down;
+        &:after {
+          background-color: rgba($key-color, 0.35);
+        }
+      }
+      .button_key {
+        transform: (translateY(1px));
+      }
+    }
+  }
+  .button_hole {
+    display: block;
+    padding: 2px;
+    background-color: darken($key-color, 45%);
+    border-top: 2px solid darken($key-color, 25%);
+    border-bottom: 2px solid darken($key-color, 65%);
+    border-radius: 0.45rem;
+    box-shadow: $key-shadow;
+    transition: all 0.95s;
+    &::after {
+      content: '';
+      display: block;
+      width: calc(100% - 4px);
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      background-color: $key-vertical-face;
+      border-bottom: 1px solid darken($key-color, 40%);
+      border-radius: 0.25rem;
+      transition: all 0.45s;
+    }
+  }
+  .button_key {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 4.2rem;
+    height: 2rem;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(
+      -22deg,
+      darken($key-color, 3%) 0%,
+      lighten($key-color, 4%) 90%
+    );
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.35rem;
+
+    transform: translateY(-4px);
+    &.button_key--wide {
+      width: 7rem;
+    }
+    &.button_key--space {
+      width: 30vw;
+    }
+  }
+  .button_text {
+    flex: 0 0 100%;
+    text-align: left;
+    align-self: flex-end;
+    padding-bottom: 0.35em;
+    padding-left: 0.45rem;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 0.03em;
+  }
+  .button_letter {
+    flex: 0 0 100%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .button_icon {
+    flex: 0 0 100%;
+    text-align: right;
+    align-self: flex-start;
+    padding-top: 0.15em;
+    padding-right: 0.45rem;
+    font-size: 1.2rem;
+  }
+}
