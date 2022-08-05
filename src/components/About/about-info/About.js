@@ -14,15 +14,15 @@ export default function AboutPage() {
       <div className='about-bio'>
         {' '}
         <p>
-          I am a {currentAge} year old software developer
+          I am a {currentAge}-year-old software developer
           with a passion for creating, learning, and
           building. I am currently a student pursuing a
-          bachelors degree in the field. While, I previously
+          bachelor's degree in the field. While I previously
           studied Business Administration and grew up
           surrounded by business environments and finance,
           my passion and interests from a young age have
           always been technology based. In 2019, I made a
-          serious life change after I lost a signfificant
+          serious life change after I lost a significant
           amount of my weight and developed a love for
           physical activity(reflected in many of my
           projects).
@@ -46,9 +46,9 @@ export default function AboutPage() {
               </HoverCard.Dropdown>
             </HoverCard>
           </strong>
-          through my parents, and currently am able to
-          relocate with assistance or work from my home in
-          Canada. Willing to attend language classes to
+          through my parents, and currently and currently
+          can relocate with assistance or work from my home
+          in Canada. Willing to attend language classes to
           learn any local languages.
         </p>
         <p></p>

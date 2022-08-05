@@ -95,12 +95,12 @@ export default function HomeInfo() {
       </Modal>
       <div className='home-info'>
         <p className='home-info__paragraph'>
-          To learn more about me, the things I've done or to
-          contact me feel free to click any of the above
-          buttons. To get a google doc link to my resume or
-          to visit my LinkedIn click either button below.
-          Lastly click the bottom to View a list of places
-          I'd be willing to work.
+          TO LEARN MORE ABOUT ME, AND THE THINGS I'VE DONE
+          OR TO CONTACT ME FEEL FREE TO CLICK ANY OF THE
+          ABOVE BUTTONS. TO GET A GOOGLE DOC LINK TO MY
+          RESUME OR TO VISIT MY LINKEDIN CLICK EITHER BUTTON
+          BELOW. LASTLY, CLICK THE BOTTOM TO VIEW A LIST OF
+          PLACES I'D BE WILLING TO WORK.
         </p>
       </div>
       <div className='home-buttons'>
