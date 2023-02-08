@@ -1,5 +1,18 @@
 export const projects = [
   {
+    type: ['Documentation'],
+    title: 'MuliMedia Course Notes', 
+    description:
+      "Cycling Social Media App For Learning C#, Api's, .NET, Angular.",
+    moreinfo: true,
+    moreinfolink: '/multimedia-course-notes',
+    badge: 'Documentation',
+    githublink:
+      '',
+    image:
+      'https://images.unsplash.com/photo-1607968565043-36af90dde238?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80',
+  },
+  {
     type: ['C#', 'Angular', 'TypeScript'],
     title: 'Rider Finder WebApp',
     description:

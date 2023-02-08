@@ -6,6 +6,7 @@ import Navbar from './components/Home/navbar/Navbar';
 import ProjectPage from './components/Projects/ProjectPage/ProjectPage';
 import ContactPage from './components/Contact/ContactPage/ContactPage';
 import JumboVismaManager from './components/About/MoreInfo/JumboVismaMoreInfo/JumboVismaManager';
+import MultiMedia from './components/About/MoreInfo/MultiMediaMoreInfo/MultiMedia';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <Route
           path='tjv-rider-manager'
           element={<JumboVismaManager />}
+        />
+        <Route
+          path='/multimedia-course-notes'
+          element={<MultiMedia/>}
         />
       </Routes>
     </>

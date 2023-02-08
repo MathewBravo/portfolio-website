@@ -370,4 +370,12 @@ a {
   width: 85%;
 }
 
+.container {
+  margin: 5rem;
+}
+
+.topicTable {
+  font-size: 1.3rem;
+}
+
 /*# sourceMappingURL=index.css.map */
