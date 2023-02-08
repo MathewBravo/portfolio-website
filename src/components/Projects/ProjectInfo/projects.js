@@ -1,7 +1,7 @@
 export const projects = [
   {
     type: ['Documentation'],
-    title: 'MuliMedia Course Notes', 
+    title: 'MultiMedia Course Notes', 
     description:
       "Cycling Social Media App For Learning C#, Api's, .NET, Angular.",
     moreinfo: true,
