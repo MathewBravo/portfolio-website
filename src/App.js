@@ -8,6 +8,7 @@ import ContactPage from "./components/Contact/ContactPage/ContactPage";
 import JumboVismaManager from "./components/About/MoreInfo/JumboVismaMoreInfo/JumboVismaManager";
 import MultiMedia from "./components/About/MoreInfo/MultiMediaMoreInfo/MultiMedia";
 import Images from "./components/MultiMediaTopics/Images/Images";
+import Sound from "./components/MultiMediaTopics/Sound/Sound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="tjv-rider-manager" element={<JumboVismaManager />} />
         <Route path="/multimedia-course-notes" element={<MultiMedia />} />
         <Route path="/multimedia-course-notes/images" element={<Images />} />
+        <Route path="/multimedia-course-notes/sound" element={<Sound />} />
       </Routes>
     </>
   );

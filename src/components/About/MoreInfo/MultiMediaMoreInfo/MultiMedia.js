@@ -8,7 +8,7 @@ import {
   NavLink,
 } from "@mantine/core";
 
-import { IconPhoto } from "@tabler/icons";
+import { IconDeviceSpeaker, IconPhoto } from "@tabler/icons";
 
 export default function MultiMedia() {
   return (
@@ -29,6 +29,14 @@ export default function MultiMedia() {
             href="/multimedia-course-notes/images"
             component="a"
           />
+          <NavLink
+            label="Sound"
+            description="All about digital audio "
+            color={"dark"}
+            icon={<IconPhoto size={46} stroke={2.5} />}
+            href="/multimedia-course-notes/sound"
+            component="a"
+          />
         </Grid.Col>
         <Grid.Col span={4} className="topicTable">
           Table of Topics
@@ -45,6 +53,17 @@ export default function MultiMedia() {
                 The evolution of computer-based imagery. How it started. How it
                 works. The power it holds.
               </Text>
+            </HoverCard.Dropdown>
+          </HoverCard>
+          <HoverCard width={280} shadow="md">
+            <HoverCard.Target>
+              <NavLink
+                label="Sound"
+                icon={<IconDeviceSpeaker size={26} stroke={1.5} />}
+              />
+            </HoverCard.Target>
+            <HoverCard.Dropdown>
+              <Text size="sm">All about digital audio</Text>
             </HoverCard.Dropdown>
           </HoverCard>
         </Grid.Col>
