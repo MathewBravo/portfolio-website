@@ -8,7 +8,14 @@ import {
   NavLink,
 } from "@mantine/core";
 
-import { IconDeviceSpeaker, IconPhoto } from "@tabler/icons";
+import {
+  IconDeviceSpeaker,
+  IconPhoto,
+  IconVideo,
+  IconVideoPlus,
+  IconVolume,
+  IconVolume3,
+} from "@tabler/icons";
 
 export default function MultiMedia() {
   return (
@@ -33,8 +40,16 @@ export default function MultiMedia() {
             label="Sound"
             description="All about digital audio "
             color={"dark"}
-            icon={<IconPhoto size={46} stroke={2.5} />}
+            icon={<IconVolume size={46} stroke={2.5} />}
             href="/multimedia-course-notes/sound"
+            component="a"
+          />
+          <NavLink
+            label="Animation"
+            description="Pixel by pixel, frame by frame, the evolution of computer-based animation."
+            color={"dark"}
+            icon={<IconVideo size={46} stroke={2.5} />}
+            href="/multimedia-course-notes/animation"
             component="a"
           />
         </Grid.Col>
@@ -64,6 +79,20 @@ export default function MultiMedia() {
             </HoverCard.Target>
             <HoverCard.Dropdown>
               <Text size="sm">All about digital audio</Text>
+            </HoverCard.Dropdown>
+          </HoverCard>
+          <HoverCard width={280} shadow="md">
+            <HoverCard.Target>
+              <NavLink
+                label="Animation"
+                icon={<IconVideoPlus size={26} stroke={1.5} />}
+              />
+            </HoverCard.Target>
+            <HoverCard.Dropdown>
+              <Text size="sm">
+                Pixel by pixel, frame by frame, the evolution of computer-based
+                animation.
+              </Text>
             </HoverCard.Dropdown>
           </HoverCard>
         </Grid.Col>
