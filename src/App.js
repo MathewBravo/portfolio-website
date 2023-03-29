@@ -10,6 +10,7 @@ import MultiMedia from "./components/About/MoreInfo/MultiMediaMoreInfo/MultiMedi
 import Images from "./components/MultiMediaTopics/Images/Images";
 import Sound from "./components/MultiMediaTopics/Sound/Sound";
 import Anim from "./components/MultiMediaTopics/Animation/Animation";
+import FilmMaking from "./components/MultiMediaTopics/FilmMaking/FilmMaking";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route path="/multimedia-course-notes/images" element={<Images />} />
         <Route path="/multimedia-course-notes/sound" element={<Sound />} />
         <Route path="/multimedia-course-notes/animation" element={<Anim />} />
+        <Route
+          path="/multimedia-course-notes/filmmaking"
+          element={<FilmMaking />}
+        />
       </Routes>
     </>
   );

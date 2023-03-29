@@ -10,6 +10,8 @@ import {
 
 import {
   IconDeviceSpeaker,
+  IconMovie,
+  IconMovieOff,
   IconPhoto,
   IconVideo,
   IconVideoPlus,
@@ -50,6 +52,14 @@ export default function MultiMedia() {
             color={"dark"}
             icon={<IconVideo size={46} stroke={2.5} />}
             href="/multimedia-course-notes/animation"
+            component="a"
+          />
+          <NavLink
+            label="FilmMaking"
+            description="The Process Behind Film."
+            color={"dark"}
+            icon={<IconMovie size={46} stroke={2.5} />}
+            href="/multimedia-course-notes/filmmaking"
             component="a"
           />
         </Grid.Col>
@@ -93,6 +103,17 @@ export default function MultiMedia() {
                 Pixel by pixel, frame by frame, the evolution of computer-based
                 animation.
               </Text>
+            </HoverCard.Dropdown>
+          </HoverCard>
+          <HoverCard width={280} shadow="md">
+            <HoverCard.Target>
+              <NavLink
+                label="Animation"
+                icon={<IconMovie size={26} stroke={1.5} />}
+              />
+            </HoverCard.Target>
+            <HoverCard.Dropdown>
+              <Text size="sm">The Process Behind Film.</Text>
             </HoverCard.Dropdown>
           </HoverCard>
         </Grid.Col>
