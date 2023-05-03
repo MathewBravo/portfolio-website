@@ -8,21 +8,29 @@
 
   &-title {
     text-transform: uppercase;
+    color: $onedark-yellow;
   }
 
   &-bio {
     width: 75%;
     text-align: center;
     justify-content: center;
+    color: $onedark-green;
   }
   &-table {
     &__title {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-style: dotted;
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
+      color: $onedark-yellow;
+      &__class {
+        color: $onedark-purple;
+      }
+      &__content {
+        color: $onedark-blue;
+        margin: 0;
+        padding-left: 2rem;
+      }
     }
     &__interests {
       display: flex;

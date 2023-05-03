@@ -9,4 +9,35 @@
       margin-right: 1rem;
     }
   }
+  &-learning {
+    padding-left: 2rem;
+  }
+  &-interior {
+    padding-left: 2rem;
+  }
+  &-display {
+    padding-left: 2rem;
+  }
+  &-green {
+    color: $onedark-green;
+  }
+  &-yellow {
+    color: $onedark-yellow;
+  }
+  &-red {
+    color: $onedark-red;
+  }
+  &-purple {
+    color: $onedark-purple;
+  }
+  &-blue {
+    color: $onedark-blue;
+  }
+  &-gray {
+    color: $onedark-gray;
+  }
+  a {
+    color: $onedark-green;
+    text-decoration: none;
+  }
 }

@@ -1,13 +1,8 @@
-@import './sass/variables';
-@import './sass/global';
+@import "./sass/variables";
+@import "./sass/global";
 
-@import './components/Home/navbar/navbar';
-@import './components/Home/title/title';
-@import './components/Home/home-info/homeinfo';
-@import './components/About/about-info/about';
-@import './components/Projects/ProjectPage/projectpage';
-@import './components/Projects/ProjectCard/projectcard';
-@import './components/Contact/ContactPage/contactpage';
-@import './components/About/MoreInfo/JumboVismaMoreInfo/jumbovismamanager';
-@import './components/About/MoreInfo/MultiMediaMoreInfo/multimedia';
-@import './components/MultiMediaTopics/Images/image';
+@import "./components/Home/navbar/navbar";
+@import "./components/Home/HomePage/homepage";
+@import "./components/About/about-info/about";
+@import "./components/Projects/ProjectPage/projectpage";
+@import "./components/Contact/ContactPage/contactpage";

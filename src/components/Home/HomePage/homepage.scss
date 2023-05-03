@@ -1,0 +1,31 @@
+.title-main {
+  &__name {
+    margin-top: 25%;
+    margin-bottom: 0%;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: $onedark-gray;
+  }
+  &__end {
+    color: $onedark-gray;
+  }
+  &__class {
+    color: $onedark-yellow;
+  }
+  &__attribute {
+    color: $onedark-gray;
+    padding-left: 3rem;
+    &__get {
+      a {
+        text-decoration: none;
+        color: $onedark-blue;
+      }
+      &__click {
+        color: $onedark-red;
+      }
+      &__string {
+        color: $onedark-green;
+      }
+    }
+  }
+}
